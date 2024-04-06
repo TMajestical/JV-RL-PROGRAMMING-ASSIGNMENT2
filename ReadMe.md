@@ -9,6 +9,8 @@ To train with a custom hyperparameter configuration, configure the specific hype
 
 Simliar steps apply to the JV_Duelling_DQN.py code, the heart of which is the Duelling DQN algorithm.
 
+In both of the above codes make sure to set the appropriate environment in either custom_testing() or setup_and_start_expt(), as required.
+
 JV_Generate_Results_For_Report.py reads picks the best hyperparmeter configuration from *_Best_Config.py (that was found after hyperparameter tuning) and averages the rewards and regrets over a list of seeds. This code recreates the plots used in the report.
 
 Uncomment the invocation to generate_ddqn_report() and/or generate_reinforce_report(), as required.
